@@ -1,9 +1,11 @@
 <template>
   <b-container>
   <b-row>
-    <b-col style="background-color: red;">test</b-col>
-    <b-col style="background-color: green;">hello</b-col>
-    <b-col style="background-color: blue;">world</b-col>
+    <b-col style="background-color: yellow;">Video</b-col>
+  </b-row>
+  <b-row>
+    <b-col style="background-color: cyan;">controls / queue</b-col>
+    <b-col style="background-color: lightgreen;">infos</b-col>
   </b-row>
 </b-container>
 </template>
