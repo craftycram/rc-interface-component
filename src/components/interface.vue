@@ -2,7 +2,7 @@
   <b-container>
   <b-row>
     <b-col class="grid embed-responsive embed-responsive-16by9" style="background-color: yellow;">
-      <slot name="videocomponent"></slot>
+      <slot class="embed-responsive-item" name="videocomponent"></slot>
     </b-col>
   </b-row>
   <b-row>
