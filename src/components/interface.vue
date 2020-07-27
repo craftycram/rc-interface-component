@@ -2,7 +2,12 @@
   <b-container>
   <b-row>
     <b-col class="grid embed-responsive embed-responsive-16by9" style="background-color: yellow;">
-      <slot class="embed-responsive-item" name="videocomponent"></slot>
+      <slot name="videocomponent">
+        <img
+          class="embed-responsive-item"
+          :src="streamUrl"
+          alt="Stream kann nicht angezeigt werden">
+      </slot>
     </b-col>
   </b-row>
   <b-row>
@@ -18,7 +23,9 @@
 
 <script>
 export default {
-
+  props: {
+    streamUrl: String,
+  },
 };
 </script>
 
