@@ -1,7 +1,7 @@
 <template>
   <b-container>
   <b-row>
-    <b-col class="grid embed-responsive embed-responsive-16by9" style="background-color: yellow;">
+    <b-col class="interface embed-responsive embed-responsive-16by9">
       <slot name="videocomponent">
         <img
           class="embed-responsive-item"
@@ -11,10 +11,10 @@
     </b-col>
   </b-row>
   <b-row>
-    <b-col class="grid" style="background-color: cyan; min-height: 200px;">
+    <b-col class="interface">
       <slot name="controlcomponent"></slot>
     </b-col>
-    <b-col class="grid" style="background-color: lightgreen; min-height: 200px;">
+    <b-col class="interface">
       <slot name="queuecomponent"></slot>
       </b-col>
   </b-row>
@@ -30,8 +30,10 @@ export default {
 </script>
 
 <style>
-.grid {
+.interface {
   margin: 5px;
+  background-color: #eeeeee;
+  min-height: 200px;
 }
 
 </style>
